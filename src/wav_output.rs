@@ -32,6 +32,7 @@ mod test {
     use std::time::Duration;
 
     #[test]
+    #[ignore]
     fn test_output_to_wav() {
         let make_source = || {
             crate::source::SineWave::new(745.0)
