@@ -253,7 +253,7 @@ impl fmt::Display for SeekError {
                 write!(f, "Accurate seeking is not supported")
             }
             SeekError::BaseSeek(err) => {
-                write!(f, "Format reader failed to seek: {:?}", err)
+                write!(f, "Format reader failed to seek: {err:?}")
             }
         }
     }
